@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>index</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <form class="calc">
+
+      <div class="calc__main">
+        <div class="calc__TT">
+          <h3 class="calc__title">ТЗ и важная информация</h3>
+
+          <div class="calc__subtitle">Задание на создание сайта</div>
+          <div class="calc__task">
+
+            <div><input type="radio" value="0" period="0" id="task-1" name="task">
+              <label for="task-1">Работа ведется по заданию или пожеланиям заказчика</label></div>
+
+            <div><input type="radio" value="6500" period="1" id="task-2" name="task">
+              <label for="task-2">Разработка технического задания</label></div>
+
+          </div>
+
+          <div class="calc__subtitle">Аналитический сбор перед началом работ над вашим сайтом</div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="6500" period="1" name="workOnCustomer" id="workOnCustomer">
+            <label for="workOnCustomer">Маркетинговый анализ рынка<span class="calc__checkbox-info">i</span></label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="7500" period="2" name="devTT" id="devTT">
+            <label for="devTT">Разработка УТП,<span class="calc__checkbox-info">i</span> точек захвата</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="6000" period="1.5" name="compilation" id="compilation">
+            <label for="compilation">Составление семантического ядра<span class="calc__checkbox-info">i</span></label>
+          </div>
+        </div>
+
+        <h3 class="calc__title">Платформа и CMS<span class="calc__checkbox-info">i</span> сайта</h3>
+
+        <div class="calc__subtitle">Выберите тип сайта</div>
+        <div class="calc__type">
+          <label for="type-1">
+            <input type="radio" id="type-1" name="type" value="10000" class="calc__type-input">
+            <span class="calc__type-span">
+              <span>Визитка</span>
+            </span>
+          </label>
+          <label for="type-2">
+            <input type="radio" id="type-2" name="type" value="55000" class="calc__type-input">
+            <span class="calc__type-span">
+              <span>Корпоративный</span>
+            </span>
+          </label>
+          <label for="type-3">
+            <input type="radio" id="type-3" name="type" value="35000" class="calc__type-input">
+            <span class="calc__type-span">
+              <span>Промо сайт</span>
+            </span>
+          </label>
+          <label for="type-4">
+            <input type="radio" id="type-4" name="type" value="7000" class="calc__type-input">
+            <span class="calc__type-span">
+              <span>Мини сайт</span>
+            </span>
+          </label>
+          <label for="type-5">
+            <input type="radio" id="type-5" name="type" value="15000" class="calc__type-input">
+            <span class="calc__type-span">
+              <span>Лендинг</span>
+            </span>
+          </label>
+          <label for="type-6">
+            <input type="radio" id="type-6" name="type" value="120000" class="calc__type-input">
+            <span class="calc__type-span">
+              <span>Интернет-магазин</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="calc__subtitle">Выберите систему управления сайтом (CMS)</div>
+
+        <div class="calc__select">
+          <select name='CMS'>
+            <option value="1C" selected>1С-Битрикс</option>
+            <option value='WordPress'>WordPress</option>
+            <option value='Shopify'>Shopify</option>
+            <option value='Opencart'>Opencart</option>
+            <option value='Tilda'>Tilda</option>
+          </select>
+          <span class="calc__select-arrow">
+            &lt;</span> </div>
+
+        <div class="calc__design">
+          <h3 class="calc__title">Дизайн и прототипирование</h3>
+
+          <div class="calc__design-radio">
+
+            <div>
+              <input type="radio" id="design-1" name="design">
+              <label for="design-1">Индивидуальный дизайн</label>
+            </div>
+
+            <div>
+              <input type="radio" id="design-2" name="design">
+              <label for="design-2">Шаблонный дизайн</label>
+            </div>
+
+          </div>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="0" period="0" name="customer design" id="customerDesign">
+            <label for="customerDesign">Дизайн предоставляет заказчик</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="10000" period="2" name="webPrototype" id="webPrototype">
+            <label for="webPrototype">Создание прототипа сайта</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="5000" period="1" name="creationOfSiteStructure" id="structure">
+            <label for="structure">Создание структуры сайта</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="28000" period="12" name="uniqueDesign" id="uniqueDesign">
+            <label for="uniqueDesign">Создание уникального дизайна</label>
+          </div>
+          <div class="calc__checkboxNum">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="3500" period="1" name="uniqueDesignOfInternalPages"
+                id="uniqueDesignOfInternalPages">
+              <label for="uniqueDesignOfInternalPages">Создание уникального дизайна внутренних страниц</label>
+            </div>
+            <div class="quantity">
+              <input id="uniqueDesignOfInternalPagesPc" name="uniqueDesignOfInternalPages" type="number" min="0"
+                max="100" step="1" value="0">
+            </div>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="15000" period="5" name="uniqueImg" id="uniqueImg">
+            <label for="uniqueImg">Разработка индивидуальных иллюстраций</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="8500" period="3" name="uniqueIcons" id="uniqueIcons">
+            <label for="uniqueIcons">Разработка уникальных иконок</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="9000" period="5" name="refinement" id="refinement">
+            <label for="refinement">Доработка шаблонного дизайна</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="30000" period="15" name="redesignOfTheMainPage" id="redesignMainPage">
+            <label for="redesignMainPage">Редизайн главной страницы вашего сайта</label>
+          </div>
+          <div class="calc__checkboxNum">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="2800" period="1" name="redesignOfTheInternalPage" id="redesignInternalPage">
+              <label for="redesignInternalPage">Редизайн внутренних страниц вашего сайта</label>
+            </div>
+            <div class="quantity">
+              <input name="redesignOfTheInternalPage" type="number" min="0" max="1000" step="1" value="0">
+            </div>
+          </div>
+
+          <div class="calc__subtitle">Дополнительные услуги</div>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="20000" period="15" name="needLogo" id="logo">
+            <label for="logo">Создание логотипа</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="38000" period="20" name="needGuideline" id="guideline">
+            <label for="guideline">Создание гайдлайна</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="56000" period="25" name="needBrandbook" id="brandbook">
+            <label for="brandbook">Создание брендбука</label>
+          </div>
+        </div>
+
+        <div class="calc__layout">
+          <h3 class="calc__title">Верстка и программирование</h3>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="18000" period="15" name="backAndFrontend" id="backAndFrontend">
+            <label for="backAndFrontend">Верстка и программирование</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="0" period="0" name="frontendNotNeed" id="noFront">
+            <label for="noFront">Верстка не требуется</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="15000" period="5" name="adaptiveFront" id="adaptiveFront">
+            <label for="adaptiveFront">Адаптивная верстка</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="36000" period="10" name="readyPageOnCMS" id="readyPageOnCMS">
+            <label for="readyPageOnCMS">Посадка уже готового сайта на CMS</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="6500" period="0.5" name="module" id="module">
+            <label for="module">Подключение уже имеющихся модулей на сайт</label>
+          </div>
+
+          <div class="calc__subtitle">Коммуникации с посетителем</div>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="callback" id="callback">
+            <label for="callback">Модуль обратного звонка на сайте</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="formOrder" id="formOrder">
+            <label for="formOrder">Форма онлайн заказа</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="consultant" id="consultant">
+            <label for="consultant">Модуль онлайн-консультанта</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="weCallback" id="weCallback">
+            <label for="weCallback">Расширение - Мы перезвоним Вам за 20 секунд</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="corporatMail" id="corporatMail">
+            <label for="corporatMail">Корпоративная почта (info@wellmedia.ru)</label>
+          </div>
+
+          <div class="calc__subtitle">Разделы сайта</div>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="contactSection" id="contactSection">
+            <label for="contactSection">Раздел контакты</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="newsSection" id="newsSection">
+            <label for="newsSection">Раздел новости</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="faqSection" id="faqSection">
+            <label for="faqSection">Раздел вопрос-ответ</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="articleSection" id="articleSection">
+            <label for="articleSection">Раздел статьи</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="teamSection" id="teamSection">
+            <label for="teamSection">Раздел наша команда</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="partnerSection" id="partnerSection">
+            <label for="partnerSection">Раздел партнеры</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="sertificateSection" id="sertificateSection">
+            <label for="sertificateSection">Раздел сертификаты</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="promotionSection" id="promotionSection">
+            <label for="promotionSection">Раздел акции</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="gallerySection" id="gallerySection">
+            <label for="gallerySection">Раздел галерея</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="servicesSection" id="servicesSection">
+            <label for="servicesSection">Раздел услуги</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="1" name="productSection" id="productSection">
+            <label for="productSection">Каталог продкуции (с корзиной)</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="payAndDelivery" id="payAndDelivery">
+            <label for="payAndDelivery">Оплата и доставка</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="garanty" id="garanty">
+            <label for="garanty">Гарантия и возврат</label>
+          </div>
+
+          <div class="calc__subtitle">Функции и Модули на сайт</div>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="2000" period="0.5" name="timer" id="timer">
+            <label for="timer">Таймер обратного отсчета</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="3500" period="1" name="search" id="search">
+            <label for="search">Модуль поиска по сайту</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="4500" period="1" name="slider" id="slider">
+            <label for="slider">Динамический слайдер на сайт</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="12000" period="1" name="cabinet" id="cabinet">
+            <label for="cabinet">Программирование личного кабинета на сайте (кроме интернет магазина)</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="moduleSocial" id="moduleSocial">
+            <label for="moduleSocial">Модуль социальных сетей</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="webMap" id="webMap">
+            <label for="webMap">Интерактивная карта и схема проезда</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="5000" period="1" name="multilanguage" id="multilanguage">
+            <label for="multilanguage">Мультиязычность</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="500" period="0.5" name="favicon" id="favicon">
+            <label for="favicon">Фавикон (иконка сайта)</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="13000" period="7" name="webCalc" id="webCalc">
+            <label for="webCalc">Калькулятор стоимости ваших услуг</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1000" period="0.5" name="vote" id="vote">
+            <label for="vote">Опрос / голосование</label>
+          </div>
+
+        </div>
+
+        <div class="calc__filling">
+          <h3 class="calc__title">Наполнение сайта</h3>
+
+          <div class="calc__checkboxNum">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="500" period="1" name="copyright" id="copyright">
+              <label for="copyright">Копирайтинг</label>
+            </div>
+            <div class="quantity">
+              <input name="copyright" type="number" min="0" max="100" step="1" value="0">
+            </div>
+            стр.
+          </div>
+          <div class="calc__checkboxNum">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="350" period="1" name="rewrite" id="rewrite">
+              <label for="rewrite">Рерайтинг</label>
+            </div>
+            <div class="quantity">
+              <input name="rewrite" type="number" min="0" max="100" step="1" value="0">
+            </div>
+          </div>
+          <div class="calc__checkboxNum calc__checkboxNum-width">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="350" period="0.5" name="searchImg" id="searchImg">
+              <label for="searchImg">Поиск фотографий и размещение их на сайте (за 1 шт.)</label>
+            </div>
+            <div class="quantity">
+              <input name="searchImg" type="number" min="0" max="100" step="1" value="0">
+            </div>
+            шт.
+          </div>
+          <div class="calc__checkboxNum calc__checkboxNum-width">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="350" period="0.5" name="fillingPages" id="fillingPages">
+              <label for="fillingPages">Наполнение страниц сайта</label>
+            </div>
+            <div class="quantity">
+              <input name="fillingPages" type="number" min="0" max="100" step="1" value="0">
+            </div>
+            стр.
+          </div>
+          <div class="calc__checkboxNum calc__checkboxNum-width">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="150" period="0.5" name="contentTransfer" id="contentTransfer">
+              <label for="contentTransfer">Перенос контента со старого сайта (за 1 стр.)</label>
+            </div>
+            <div class="quantity">
+              <input name="contentTransfer" type="number" min="0" max="100" step="1" value="0">
+            </div>
+            стр.
+          </div>
+          <div class="calc__checkboxNum calc__checkboxNum-width">
+            <div class="calc__checkbox">
+              <input type="checkbox" value="85" period="0.5" name="addProducts" id="addProducts">
+              <label for="addProducts">Добавление товаров вручную (за 1 шт.)</label>
+            </div>
+            <div class="quantity">
+              <input name="addProducts" type="number" min="0" max="100" step="1" value="0">
+            </div>
+            шт.
+          </div>
+        </div>
+
+        <div class="calc__placement">
+          <h3 class="calc__title">Размещение сайта</h3>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="650" period="0.5" name="helpOnChooseDomain" id="chooseDomain">
+            <label for="chooseDomain">Помощь в выборе домена</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="450" period="0.5" name="domain" id="domain">
+            <label for="domain">Регистрация нового домена (ежегодная оплата)</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="4000" period="2" name="hosting" id="hosting">
+            <label for="hosting">Размещение сайта на хостинге (ежегодная оплата)</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="0" period="2" name="customerHost" id="customerHost">
+            <label for="customerHost">Размещение сайта на хостинге заказчика</label>
+          </div>
+        </div>
+
+        <div class="calc__support">
+          <h3 class="calc__title">Поддержка и техническое обслуживание</h3>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="6500" period="0" name="technicalSupport" id="techSupport">
+            <label for="techSupport">Техническая поддержка сайта</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="3900" period="0" name="infoSupport" id="infoSupport">
+            <label for="infoSupport">Информационная поддержка</label>
+          </div>
+        </div>
+
+        <div class="calc__animation">
+          <h3 class="calc__title">Анимация</h3>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="5000" period="5" name="easyAnimation" id="easyAnimation">
+            <label for="easyAnimation">Простая анимация</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="25000" period="12" name="hardAnimation" id="hardAnimation">
+            <label for="hardAnimation">Сложная анимация</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="37000" period="23" name="3DAnimation" id="3DAnimation">
+            <label for="3DAnimation">3D анимация</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="15000" period="10" name="2DAnimation" id="2DAnimation">
+            <label for="2DAnimation">2D анимация</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="7500" period="2" name="animationText" id="animationText">
+            <label for="animationText">Анимация текста</label>
+          </div>
+        </div>
+
+
+        <div class="calc__seo">
+          <h3 class="calc__title">SEO Продвижение сайта</h3>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="15000" period="12" name="firstSEO" id="firstSEO">
+            <label for="firstSEO">Первичная SEO оптимизация</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="15000" period="0" name="monthSEO" id="monthSEO">
+            <label for="monthSEO">SEO продвижение в месяц</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="3500" period="0.5" name="optimizationImg" id="optimizationImg">
+            <label for="optimizationImg">Оптимизация изображений</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="6500" period="0" name="smartView" id="smartView">
+            <label for="smartView">Smart View<span class="calc__checkbox-info">i</span></label>
+          </div>
+        </div>
+
+        <div class="calc__add">
+          <h3 class="calc__title">Дополнительные услуги</h3>
+
+          <div class="calc__checkbox">
+            <input type="checkbox" value="25000" period="15" name="CRM" id="CRM">
+            <label for="CRM">Интеграция CRM системы</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="6500" period="2" name="hostingTransfer" id="hostingTransfer">
+            <label for="hostingTransfer">Перенос вашего сайта на наш хостинг</label>
+          </div>
+          <div class="calc__checkbox">
+            <input type="checkbox" value="1500" period="0.5" name="SSL" id="SSL">
+            <label for="SSL">Приобретение и установка SSL<span class="calc__checkbox-info">i</span> сертификата</label>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="calc__check-inner">
+        <div class="calc__check">
+          <div class="calc__check-hole"></div>
+          <div class="calc__check-list">
+
+            <div class="calc__check-list__title">Список работ</div>
+            <div class="calc__check-list__choose">
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-TT">ТЗ и важная инф.</span><span class="price priceTT"> 0
+                </span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-CMS">Платформа сайта</span><span class="price priceCMS"> 0</span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-design">Дизайн и стрктура</span><span class="price priceDesign">
+                  0
+                </span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-layout">Верстка</span><span class="price priceLayout"> 0
+                </span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-filling">Наполнение</span><span class="price priceFilling">
+                  0</span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-placement">Размещение сайта</span><span
+                  class="price pricePlacement"> 0
+                </span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-support">Поддержка сайта</span><span class="price priceSupport">
+                  0
+                </span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-animation">Анимация</span><span class="price priceAnimation"> 0
+                </span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-SEO">SEO продвижение</span><span class="price priceSEO"> 0
+                </span>
+              </div>
+
+              <div class="calc__check-list__choose-inner">
+                <span class="choose__name choose__name-addServices">Доп. услуги</span><span class="price priceAdd"> 0
+                </span>
+              </div>
+
+              <div class="calc__check-list__line"></div>
+            </div>
+            <div class="calc__check-list__period">
+              <p>Срок исполнения</p> <input type="text" name="period" id="period">
+            </div>
+            <div class="calc__check-list__total">
+              <p>Итого:</p>
+              <div class="totalAndLogo">
+                <input type="text" name="total" id="total">
+                <span class="logo"><span>W</span>M</span>
+              </div>
+            </div>
+            <button type="submit">Заказать</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

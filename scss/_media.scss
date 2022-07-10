@@ -1,0 +1,14 @@
+@media (max-width: 1063px) {
+  .calc__main {
+    margin-bottom: 50px;
+  }
+  .calc__check {
+    position: relative;
+    top: 0;
+  }
+}
+@media (max-width: 550px) {
+  .calc__checkboxNum-width .calc__checkbox {
+    min-width: 300px;
+  }
+}
