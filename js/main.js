@@ -22,44 +22,108 @@ $().ready(function () {
     $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
   });
 
-  
+  let total = 0;
+  let period = 0;
+
+  let priceTT = 0;
+  let priceCMS = 0;
+  let priceDesign = 0;
+  let priceLayout = 0;
+  let priceFilling = 0;
+  let pricePlacement = 0;
+  let priceSupport = 0;
+  let priceAnimation = 0;
+  let priceSEO = 0;
+  let priceAdd = 0;
 
   // проверка чекбокса
-  $('input').on('change', function () {
-    total = 0;
-    period = 0;
-
-    let priceTT = 0;
-    let priceCMS = 0;
-    let priceDesign = 0;
-    let priceLayout = 0;
-    let priceFilling = 0;
-    let pricePlacement = 0;
-    let priceSupport = 0;
-    let priceAnimation = 0;
-    let priceSEO = 0;
-    let priceAdd = 0;
-
+  $('input').on('change', function (e) {
     let test = [];
+    if(e.target.checked) {
+      let type = $(e.target).attr('typeWork');
+      switch (type) {
+        case 'priceTT':
+          priceTT += parseInt($(e.target).val());
+          break;
+        case "priceCMS":
+          priceCMS += parseInt($(e.target).val());
+          break;
+        case "priceDesign":
+          priceDesign += parseInt($(e.target).val());
+          break;
+        case "priceLayout":
+          priceLayout += parseInt($(e.target).val());
+          break;
+        case "priceFilling":
+          priceFilling += parseInt($(e.target).val());
+          break;
+        case "pricePlacement":
+          pricePlacement += parseInt($(e.target).val());
+          break;
+        case "priceSupport":
+          priceSupport += parseInt($(e.target).val());
+          break;
+        case "priceAnimation":
+          priceAnimation += parseInt($(e.target).val());
+          break;
+        case "priceSEO":
+          priceSEO += parseInt($(e.target).val());
+          break;
+        case "priceAdd":
+          priceAdd += parseInt($(e.target).val());
+          break;
+        default:
+          text = "No value found";
+      }
+      period += +($(e.target).attr('period'));
+      console.log($(e.target).attr('period'));
+      console.log(period);
+      total += +($(e.target).val());
+
+    } else {
+      let type = $(e.target).attr('typeWork');
+      switch (type) {
+        case 'priceTT':
+          priceTT -= parseInt($(e.target).val());
+          break;
+        case "priceCMS":
+          priceCMS -= parseInt($(e.target).val());
+          break;
+        case "priceDesign":
+          priceDesign -= parseInt($(e.target).val());
+          break;
+        case "priceLayout":
+          priceLayout -= parseInt($(e.target).val());
+          break;
+        case "priceFilling":
+          priceFilling -= parseInt($(e.target).val());
+          break;
+        case "pricePlacement":
+          pricePlacement -= parseInt($(e.target).val());
+          break;
+        case "priceSupport":
+          priceSupport -= parseInt($(e.target).val());
+          break;
+        case "priceAnimation":
+          priceAnimation -= parseInt($(e.target).val());
+          break;
+        case "priceSEO":
+          priceSEO -= parseInt($(e.target).val());
+          break;
+        case "priceAdd":
+          priceAdd -= parseInt($(e.target).val());
+          break;
+        default:
+          text = "No value found";
+      }
+      period -= +($(e.target).attr('period'));
+      console.log($(e.target).attr('period'));
+      console.log(period);
+      total -= +($(e.target).val());
+    }
     
-    $("input:checked").each(function () {
-      total += parseInt($(this).val());
-      period += parseInt($(this).attr('period'));
+    
 
-      priceTT += parseInt($('input:checked[typeWork=priceTT]').val());
-      priceCMS += parseInt($('input:checked[typeWork=priceCMS]').val());
-      priceDesign += parseInt($('input:checked[typeWork=priceDesign]').val());
-      priceLayout += parseInt($('input:checked[typeWork=priceLayout]').val());
-      priceFilling += parseInt($('input:checked[typeWork=priceFilling]').val());
-      pricePlacement += parseInt($('input:checked[typeWork=pricePlacement]').val());
-      priceSupport += parseInt($('input:checked[typeWork=priceSupport]').val());
-      priceAnimation += parseInt($('input:checked[typeWork=priceAnimation]').val());
-      priceSEO += parseInt($('input:checked[typeWork=priceSEO]').val());
-      priceAdd += parseInt($('input:checked[typeWork=priceAdd]').val());
-
-      // console.log(parseInt($(this).val()) + ' typeWork: ' + $(this).attr('typeWork'));
-      $('.' + $(this).attr('typeWork')).text(parseInt($(this).val()))
-    });
     $("#total").val(Math.ceil(total) + ' ₽');
     $("#period").val(Math.ceil(period) + ' дней');
 
@@ -104,11 +168,8 @@ $().ready(function () {
     // }
   });
 
-  let period = 0;
-  let total = 0;
+  period = 0;
+  total = 0;
   $('#period').val(period);
   $('#total').val(total);
-
-
-
 });
