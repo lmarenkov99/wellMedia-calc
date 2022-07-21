@@ -25,7 +25,7 @@ $().ready(function () {
   
 
   // проверка чекбокса
-  $('input').on('change', function (e) {
+  $('input, select').on('change', function (e) {
     total = 0;
     period = 0;
     let priceTT = 0;
@@ -38,8 +38,8 @@ $().ready(function () {
     let priceAnimation = 0;
     let priceSEO = 0;
     let priceAdd = 0;
-    
-    $("input:checked").each(function () {
+
+    $("input:checked, option:selected").each(function () {
       total += parseInt($(this).val());
       period += parseInt($(this).attr('period'));
 
@@ -103,6 +103,15 @@ $().ready(function () {
       $(this).closest('.calc__checkboxNum').children('.quantity').children('input').val(0);
     }
   });
+
+  // $('select').on('change', function (e) {
+  //   console.log('change');
+  //   $('option').each(function () {
+  //     if ($(this).prop('selected') == true) {
+  //       console.log($(this).val());
+  //     }
+  //   });
+  // });
 
   // проверка ввода в input
   $('input[type=number]').keyup(function () {
