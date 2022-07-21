@@ -119,7 +119,7 @@ $().ready(function () {
     priceSEO = 0;
     priceAdd = 0;
 
-    if ($('input[type="checkbox"]:checked')) {
+    if ($('input[type="checkbox"]').is(':checked') == true) {
       $(this).closest('.calc__checkboxNum').children('.quantity').addClass('on');
       if ($(this).closest('.calc__checkboxNum').children('.quantity').children('input').val() < 1) {
         $(this).closest('.calc__checkboxNum').children('.quantity').children('input').val(1);
